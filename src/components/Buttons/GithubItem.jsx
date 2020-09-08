@@ -12,7 +12,7 @@ export function GithubItem({username, repository,description }) {
         href={`https://github.com/${username}/${repository}`}
         target="_blank"
       >
-        Open {repository} on Github!{" "}
+         {repository} 
       </AwesomeButtonSocial>
     </div>
   );

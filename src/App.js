@@ -35,7 +35,7 @@ function App() {
 
   const linkings = [
     {
-      referrer: "Hack The Box",
+      referrer: "HTB",
       picture: htbLogo,
       url: "https://www.hackthebox.eu/home/users/profile/52531",
       description:

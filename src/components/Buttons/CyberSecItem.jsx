@@ -16,7 +16,7 @@ function CyberSecItem({ url, referrer, description }) {
         type={"secondary"}
       >
         <FontAwesomeIcon icon={faTerminal} />
-        <span>Zu {referrer} !</span>
+        <span>{referrer}</span>
       </AwesomeButton>
     </div>
   );
