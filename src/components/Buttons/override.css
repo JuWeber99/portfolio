@@ -1,0 +1,12 @@
+.aws-btn {
+    display: flex;
+    align-items: center;
+    --color:  var(--mediumpurple);
+    --button-secondary-color:  var(--iceblue);
+    --button-hover-pressure: 1.2
+}
+
+.aws-btn:hover {
+    --button-secondary-color-hover:  var(--mediumpurple);
+    --button-font-color: black ;
+}

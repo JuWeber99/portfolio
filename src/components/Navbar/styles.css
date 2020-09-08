@@ -1,0 +1,62 @@
+.navbar {
+    z-index: 1000;
+    width: 5rem;
+    min-height: 100vh;
+    position: fixed;
+    background-color: var(--dark);
+    transition: all ease-in-out 300ms;
+}
+
+.navbar:hover .nav-item svg{
+    justify-self: flex-end;
+    transition: 500ms ease-in-out;
+    transform: rotate(-180deg);
+    color: var(--dark);
+}
+
+.navbar:hover .link-text {
+    transition: ease-in-out all 500ms;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    color: var(--freezepurple);
+    font-weight: bolder;
+}
+
+
+.navbar:hover {
+    background: var(--mediumpurple);
+    width: 20rem;
+    transition: ease-in-out all 500ms;
+}
+
+.navbar:hover .nav-item {
+    margin-top: 4rem;
+    width: 18rem;
+    border-color: var(--heavypurple) ;
+    border-radius: 10px;
+    transition: all ease 800ms;
+    background-color: var(--freezepurple);
+}
+
+
+.navbar:hover .nav-item p {
+    color: black;
+}
+
+
+.navbar:hover .nav-item:first-child{
+    font-size: larger;
+    text-decoration: underline;
+    height: 5rem;
+    width: 18rem;
+    margin-top: 1rem;
+    transition: width 800ms;
+    background-color: var(--transparentdark);
+}
+
+.navbar:hover .nav-link {
+    margin-left: auto;
+    margin-right: 1rem;
+}
