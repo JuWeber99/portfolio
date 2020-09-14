@@ -1,67 +1,87 @@
 :root {
-  --iceblue: #a0d2eb;
-  --freezepurple: #e5eaf5;
-  --mediumpurple: #d0bdf4;
-  --purplepain: #8458b3;
-  --heavypurple: #a28089;
-  --transparentdark: hsla(0, 2%, 22%, 0.3);
-  --transparentmediumpurple: rgba(215, 194, 255, 0.856);
-  --dark: hsla(0, 4%, 11%, 0.75);
+    --iceblue: #a0d2eb;
+    --freezepurple: #e5eaf5;
+    --mediumpurple: #d0bdf4;
+    --purplepain: #8458b3;
+    --heavypurple: #a28089;
+    --transparentdark: hsla(0, 2%, 22%, 0.3);
+    --transparentmediumpurple: rgba(215, 194, 255, 0.856);
+    --dark: hsla(0, 4%, 11%, 0.75);
+    --transition-speed: 500ms;
+    -webkit-overflow-scrolling: touch;
 }
 
 .head {
-  position: sticky;
-  z-index: 100000;
-  top: 0;
-  display: flex;
-  margin: 0px !important;
-  padding: 1rem;
-  background-color: var(--freezepurple);
-  border: 1px solid var(--dark);
+    position: sticky;
+    z-index: 100000;
+    top: 0;
+    display: flex;
+    margin: 0px !important;
+    padding: 1rem;
+    background-color: var(--dark);
+    border: 1px solid black;
 }
 
 .head h1 {
-  margin-left: 6rem;
-  display: flex;
-  align-items: center;
-  color: var(--mediumpurple);
+    text-align: center;
+    color: var(--freezepurple);
+    display: flex;
+    align-items: center;
+    color: var(--mediumpurple);
+}
+
+.head img {
+    background-color: var(--mediumpurple);
 }
 
 .head h4 {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-  color: var(--heavypurple);
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    color: var(--freezepurple);
 }
 
 .presentation {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
+    margin-top: 30px;
+    margin-left: 5rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
 }
 
-.card {
-  margin-left: 5rem;
-}
 
 @media (max-width: 1200px) {
-  body {
-    font-size: smaller;
-  }
-  .presentation {
-    flex-direction: column;
-  }
-  .presentation .slide-container {
-    min-width: 70vw;
-  }
+    body {
+        font-size: smaller;
+    }
+
+    .presentation {
+        margin-left: 6rem;
+        flex-direction: column;
+    }
+
+    .presentation .slide-container {
+        min-width: 90vw;
+        align-items: center;
+    }
 }
 
 @media (max-width: 600px) {
-  .head {
-    display: none;
-  }
-  img {
-    max-width: 100px;
-    max-height: 50px;
-  }
+    .main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .presentation {
+        margin-left: 0;
+    }
+
+    .head {
+        display: none;
+    }
+
+    img {
+        max-width: 150px;
+        max-height: 100px;
+    }
 }

@@ -23,7 +23,7 @@ function SlideShow(props) {
       >
         {props.content.map((content) => (
           <div className={"slide-item"}>
-            <img src={content.picture} width={200} height={150} alt={""} />
+            <img src={content.picture} alt={""} />
             {props.type == "github" ? (
               <GithubItem
                 username={githubUser}
