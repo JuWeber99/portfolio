@@ -4,16 +4,14 @@ import {Writeups} from "./components/Writeups/Writeups";
 import {htbWriteups, thmWriteups} from "./components/Writeups/data";
 import {SlideShowUI} from "./components/SlideShow";
 
-const PageRouter = props => {
+export const PageRouter = props => {
 
     return (
         <Switch>
             <Route path={"/portfolio"} exact component={SlideShowUI}/>
-            <Route path={"/portfolio/writeups/htb"} exact component={Writeups}/>
-            <Route path={"/portfolio/writeups/thm"} component={Writeups} exact/>
+            <Route path={"/portfolio/writeups/htb"} exact component={ () => <Writeups data={htbWriteups}/>}/>
+            <Route path={"/portfolio/writeups/thm"} component={() => <Writeups data={thmWriteups}/>} exact/>
         </Switch>
     );
 };
 
-
-export default PageRouter;
