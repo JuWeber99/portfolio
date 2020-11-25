@@ -5,7 +5,7 @@
 >**productive_execution**: Valid  
 >**productive_execution_explanation**: None  
 >**supported_platforms**: ['windows']  
-> + ### dependencies
+> + dependencies
 >>**description**: None
 
 >>**prereq_command**: `exit 0
@@ -14,7 +14,7 @@
 >>**get_prereq_command**: `echo None
 `
 
-> + ### executor
+> + executor
 >>**name**: command_prompt
 >>**command**: `PowerShell.exe -WindowStyle Hidden -Command ping www.google.com
 `
@@ -25,7 +25,7 @@
 >**productive_execution**: Valid  
 >**productive_execution_explanation**: None  
 >**supported_platforms**: ['windows']  
-> + ### dependencies
+> + dependencies
 >>**description**: None
 
 >>**prereq_command**: `exit 0
@@ -34,7 +34,7 @@
 >>**get_prereq_command**: `echo None
 `
 
-> + ### executor
+> + executor
 >>**name**: command_prompt
 >>**command**: `PowerShell.exe -w hid -Command ping google.com
 `
