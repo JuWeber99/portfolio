@@ -42,13 +42,16 @@
 }
 
 .presentation {
-    margin-top: 30px;
     margin-left: 5rem;
-    display: flex;
+    display: block;
     justify-content: space-around;
     text-align: start;
+    margin-bottom: 10rem;
 }
 
+.card {
+    margin-top: 10rem;
+}
 
 @media (max-width: 1200px) {
     body {
@@ -61,7 +64,6 @@
     }
 
     .presentation .slide-container {
-        min-width: 90vw;
         align-items: center;
     }
 }

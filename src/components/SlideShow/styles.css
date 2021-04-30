@@ -1,3 +1,6 @@
+h1 {
+  margin-left: 15rem;
+}
 
 .slide-item {
   display: flex;
@@ -7,6 +10,7 @@
   margin-top: 2rem;
   border-radius: 25px;
   border: 1px solid var(--freezepurple);
+  padding: 30px;
 }
 
 .slide-item img {
@@ -16,7 +20,6 @@
 .slide-item:hover {
   transition: ease all var(--transition-speed);
   box-shadow: 0px 0px 20px 5px var(--mediumpurple);
-  transform: scale(0.95);
   border: 1px solid var(--transparentdark);
   border-radius: 0px;
   padding: 10px;
@@ -27,9 +30,10 @@
 }
 
 .slide-container {
-  padding: 30px;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  padding: 25px;
   display: flex;
-  width: 30vw;
   border-radius: 10px;
   border: 1px solid var(--dark);
 }

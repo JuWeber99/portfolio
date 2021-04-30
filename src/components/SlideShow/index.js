@@ -65,7 +65,7 @@ export const SlideShowUI = () => {
     return (
         <div className="presentation">
             <div className={"card"}>
-                <h1><u>Meine Git-Projekte</u></h1>
+                <h1 style={{marginTop: 0}}><u>Meine Git-Projekte</u></h1>
                 <SlideShow content={projectDetails} type={"github"}/>
             </div>
             <div className={"card"}>

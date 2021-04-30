@@ -9,11 +9,6 @@ function App() {
 
     return (
         <div className="main">
-            <div className={"head"}>
-                <img src={brand} width={150} height={100}/>
-                <h1 style={{marginLeft: "20px"}}>Cybersec & Developement</h1>
-                <h4><u>Created by: Julian Weber</u></h4>
-            </div>
             <Navbar/>
             <BrowserRouter>
                 <PageRouter/>

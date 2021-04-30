@@ -12,10 +12,8 @@ function SlideShow(props) {
   return (
     <div className="slide-container">
       <Carousel
-        enableAutoPlay
         enableSwipe
-        autoPlaySpeed={2500}
-        showArrows={true}
+        showArrows={false}
         transitionMs={800}
         renderPagination={({ pages, activePage, onClick }) => (
           <Paginator activePage={activePage} onClick={onClick} pages={pages} />
